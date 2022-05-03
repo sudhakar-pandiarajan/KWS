@@ -1,5 +1,8 @@
 from som import SOM
 class SOMPost: # SOM with periodic boundary condition
+	'''
+		Compute the SOM based posterior vector represenation of the acoustic features
+	'''
 	def predict_labels(self, feats_path, model_path, network_size): 
 		r, c = network_size
 		som = SOM(r, c)
@@ -14,6 +17,9 @@ class SOMPost: # SOM with periodic boundary condition
 		return win_label_arr
 		
 	def compute_posterior(self, kernal_mat, vector, network_size): 
+		'''
+			computes the posterior vector
+		'''
 		rows, clmns = network_size
 		
 		res_pos_vec = np.zeros((rows,clmns))
@@ -41,8 +47,6 @@ class SOMPost: # SOM with periodic boundary condition
 			feats_coll.append(feats_arr[i])
 		feats_coll_array = np.asarray(feats_coll)
 		X_train = feats_coll_array
-		
-				
 		for i in range(len(X_train)): 
 			post_vector = self.compute_posterior(som_weight,X_train[i,:],network_size)
 			norm_post = post_vector / np.linalg.norm(post_vector)
