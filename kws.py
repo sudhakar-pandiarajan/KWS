@@ -1,4 +1,7 @@
 class KeywordSpotting:
+	'''
+		Computes the affinity kernel propagation between two feature vectors
+	'''
 	class Affinity:
 		def kernal_tracer(self, cost_mat, match_score): 
 			r, c = cost_mat.shape
@@ -21,32 +24,11 @@ class KeywordSpotting:
 			#print(match_coll)
 			return match_coll
 					
-		def traceback(self,cost_mat, t_f, match_score):
-			r, c = cost_mat.shape
-			match_coll=[]
-			for rid in range(r-1,0,-1):
-				match=[]
-				maxi = np.max(cost_mat[rid, :])
-				if(maxi>match_score):
-					cid = np.where(cost_mat[rid, :]==maxi)[0][0]
-					match.append((rid,cid))
-					cost_mat[rid,cid] =-1
-					rid -=1
-					cid -=1
-					r = rid
-					c = cid
-					while(cost_mat[r,c]>=match_score): 
-						#match.append("({},{})".format(rid-1,t_f[cid-1]))
-						match.append((r,c))
-						cost_mat[r,c] =-1
-						r -=1
-						c -=1
-					match.reverse()
-				if(len(match)>3):
-					match_coll.append(match)
-			return match_coll
 		 
 		def affine_cost_matrix(self, query, target, match_score=1, gap_cost=0, threshold=0.5):
+			'''
+				Computes the affinity cost matrix for similarity computation
+			'''
 			tar_frames=[i for i in range(len(target))]
 			H = np.zeros((len(query)+1, len(target)+1))
 			for q in range(1,H.shape[0]): 
