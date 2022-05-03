@@ -1,4 +1,4 @@
-# KWS
+# Keyword Spotting through Query-by-Example
 
 ## Overview
 Python implementation of Query-by-Example Spoken Term Detection. The overall objective of this work is to implement the Query-by-Example Spoken Term detection in the absolute absence of linguistic resources.
@@ -25,3 +25,15 @@ scipy
 
 ## FDLP featuee extraction 
 [FDLP Features](https://github.com/iiscleap/FeatureExtractionUsingFDLP)
+
+
+## Reference
+```
+@article{sudhakar2022ake,
+  title={A Novel Zero-Resource Spoken Term Detection Using Affinity Kernel Propagation with Acoustic Feature Map},
+  author={Sudhakar P and Sreenivasa Rao and Pabitra Mitra},
+  booktitle={},
+  year={}
+ }
+```
+
