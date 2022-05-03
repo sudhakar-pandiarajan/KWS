@@ -10,18 +10,18 @@ Use code at own risk.
 [QUESST 2014 - A Multi-lingual Database for QbE KWS task](https://speech.fit.vutbr.cz/software/quesst-2014-multilingual-database-query-by-example-keyword-spotting)
 
 ## Python package dependencies
-glob
-numpy
-pandas
-tqdm
-pickle
-shennong
-librosa
-sklearn
-itertools
-spy
-som
-scipy
+1.  glob
+2.  numpy
+3.  pandas
+4.  tqdm
+5.  pickle
+6.  shennong
+7.  librosa
+8.  sklearn
+9.  itertools
+10. spy
+11. som
+12. scipy
 
 ## FDLP featuee extraction 
 [FDLP Features](https://github.com/iiscleap/FeatureExtractionUsingFDLP)
