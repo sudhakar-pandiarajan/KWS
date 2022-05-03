@@ -31,7 +31,7 @@ scipy
 ```
 @article{sudhakar2022ake,
   title={A Novel Zero-Resource Spoken Term Detection Using Affinity Kernel Propagation with Acoustic Feature Map},
-  author={Sudhakar P and Sreenivasa Rao and Pabitra Mitra},
+  author={Sudhakar P and Sreenivasa Rao K and Pabitra Mitra},
   booktitle={},
   year={}
  }
