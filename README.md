@@ -23,7 +23,7 @@ Use code at own risk.
 11. som
 12. scipy
 
-## FDLP featuee extraction 
+## FDLP feature extraction 
 [FDLP Features](https://github.com/iiscleap/FeatureExtractionUsingFDLP)
 
 
