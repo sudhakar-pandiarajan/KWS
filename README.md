@@ -29,11 +29,17 @@ Use code at own risk.
 
 ## Reference
 ```
-@article{sudhakar2022ake,
+@article{sudhakar2023ake,
   title={A Novel Zero-Resource Spoken Term Detection Using Affinity Kernel Propagation with Acoustic Feature Map},
-  author={Sudhakar P and Sreenivasa Rao K and Pabitra Mitra},
-  booktitle={},
-  year={}
+	author={Sudhakar, P and Rao, K Sreenivasa and Mitra, Pabitra},
+	journal={SN Computer Science},
+	volume={4},
+	number={3},
+	pages={310},
+	year={2023},
+	publisher={Springer},
+  url={https://rdcu.be/c9mdN}, 
+  doi={https://doi.org/10.1007/s42979-023-01754-9},
  }
 ```
 
